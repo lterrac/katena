@@ -5,7 +5,7 @@ rm accounts-pretty.json &> /dev/null
 npx ganache-cli -l 10000000 -g 1 --allowUnlimitedContractSize -q --account_keys_path accounts.json &
 
 
-sleep 10
+sleep 30
 
 cat accounts.json | jq > accounts-pretty.json
 
